@@ -49,13 +49,13 @@ function draw() {
   verificaLimites();
   mostraRaquete(xRaquete, yRaquete);
   movimentaMinhaRaquete();
-  bolinhaNaoFicaPresa();
   verificaColisaoRaquete(xRaquete, yRaquete);  
   mostraRaquete(xRaqueteOponente, yRaqueteOponente);
   movimentaRaqueteOponente();
   verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);  
   incluiPlacar();
   marcaPonto();
+  //bolinhaNaoFicaPresa();
 }
 
 function mostraBolinha(){
@@ -144,7 +144,7 @@ function marcaPonto(){
     ponto.play();
   }
 
-  if(xBolinha < 10){
+  if(xBolinha - xRaquete < 5){
     pontosOponente += 1;  
     ponto.play();  
   }
