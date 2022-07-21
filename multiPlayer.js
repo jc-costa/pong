@@ -55,7 +55,7 @@ function draw() {
   verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);  
   incluiPlacar();
   marcaPonto();
-  //bolinhaNaoFicaPresa();
+  bolinhaNaoFicaPresa();
 }
 
 function mostraBolinha(){
